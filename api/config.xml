@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <api>
+        <name>GitHub Pages XML API</name>
+        <version>1.0.0</version>
+        <environment>production</environment>
+        <base_url>https://ВАШ_USERNAME.github.io/my-xml-api</base_url>
+    </api>
+    
+    <settings>
+        <cors_enabled>true</cors_enabled>
+        <cache_control>public, max-age=3600</cache_control>
+        <rate_limit>
+            <requests_per_hour>1000</requests_per_hour>
+            <burst_limit>100</burst_limit>
+        </rate_limit>
+        <response_format>
+            <default>xml</default>
+            <supported>
+                <format>xml</format>
+                <format>json</format>
+            </supported>
+        </response_format>
+    </settings>
+    
+    <endpoints>
+        <endpoint>
+            <path>/api/data.xml</path>
+            <method>GET</method>
+            <description>Основные данные API</description>
+            <cache>3600</cache>
+        </endpoint>
+        <endpoint>
+            <path>/api/config.xml</path>
+            <method>GET</method>
+            <description>Конфигурация API</description>
+            <cache>86400</cache>
+        </endpoint>
+        <endpoint>
+            <path>/api/users/{id}.xml</path>
+            <method>GET</method>
+            <description>Данные пользователей</description>
+            <parameters>
+                <parameter>
+                    <name>id</name>
+                    <type>string</type>
+                    <required>true</required>
+                    <description>ID пользователя</description>
+                </parameter>
+            </parameters>
+        </endpoint>
+    </endpoints>
+    
+    <maintenance>
+        <scheduled>false</scheduled>
+        <next_maintenance>2024-12-31T03:00:00Z</next_maintenance>
+        <notice>API работает в штатном режиме</notice>
+    </maintenance>
+    
+    <contact>
+        <email>api-support@example.com</email>
+        <documentation>/</documentation>
+        <status>https://status.example.com</status>
+    </contact>
+</configuration>
