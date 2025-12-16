@@ -3,23 +3,16 @@
   <result>
     <code>1</code>
     <desc>OK</desc>
-    <order-id>TEST_001</order-id>
-    <timestamp>2024-01-15T12:00:00Z</timestamp>
   </result>
   <purchase>
     <shortDesc>Test payment transaction</shortDesc>
     <longDesc>This is a test payment for demonstration purposes</longDesc>
     <account-amount>
-      <amount>1001</amount>
+      <amount>10010</amount>
       <fee>0</fee>
       <currency>643</currency>
       <exponent>2</exponent>
     </account-amount>
   </purchase>
   <transaction-type>AFT</transaction-type>
-  <additional-data>
-    <field1>value1</field1>
-    <field2>value2</field2>
-    <test-mode>true</test-mode>
-  </additional-data>
 </payment-avail-response>
