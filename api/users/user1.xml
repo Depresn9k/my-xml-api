@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+    <id>user001</id>
+    <personal_info>
+        <name>Иван Петров</name>
+        <email>ivan@example.com</email>
+        <phone>+7 (999) 123-45-67</phone>
+        <birth_date>1990-05-15</birth_date>
+        <country>Россия</country>
+        <city>Москва</city>
+    </personal_info>
+    
+    <account>
+        <username>ivan_petrov</username>
+        <created_at>2023-01-15T10:30:00Z</created_at>
+        <last_login>2024-01-14T15:45:00Z</last_login>
+        <status>active</status>
+        <role>user</role>
+        <tier>premium</tier>
+    </account>
+    
+    <statistics>
+        <orders>42</orders>
+        <total_spent>125000.50</total_spent>
+        <average_order>2976.20</average_order>
+        <last_order>2024-01-12</last_order>
+    </statistics>
+    
+    <preferences>
+        <language>ru</language>
+        <currency>RUB</currency>
+        <timezone>Europe/Moscow</timezone>
+        <notifications>
+            <email>true</email>
+            <sms>false</sms>
+            <push>true</push>
+        </notifications>
+    </preferences>
+    
+    <subscriptions>
+        <subscription>
+            <service>premium_features</service>
+            <start_date>2023-06-01</start_date>
+            <end_date>2024-05-31</end_date>
+            <auto_renew>true</auto_renew>
+            <price>1990.00</price>
+            <period>yearly</period>
+        </subscription>
+        <subscription>
+            <service>cloud_storage</service>
+            <plan>200gb</plan>
+            <price>299.00</price>
+            <period>monthly</period>
+        </subscription>
+    </subscriptions>
+</user>
