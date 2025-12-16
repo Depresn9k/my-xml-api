@@ -15,4 +15,8 @@
     </account-amount>
   </purchase>
   <transaction-type>AFT</transaction-type>
+  <mir-extension>
+    <type>3ds2.destAbroadSWIFT</type>
+    <value>BLRALFABY2X37544781070</value>
+  </mir-extension>
 </payment-avail-response>
