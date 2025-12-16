@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📄 XML API на GitHub Pages</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+        h1 { color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { color: #4a5568; margin-top: 30px; }
+        h3 { color: #5a67d8; }
+        .card {
+            background: #f7fafc;
+            border-left: 4px solid #5a67d8;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateX(5px);
+            background: #edf2f7;
+        }
+        code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .btn-secondary {
+            background: #4a5568;
+        }
+        .endpoint-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .endpoint-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .endpoint-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+        .test-box {
+            background: #e6fffa;
+            border: 2px solid #4fd1c7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+        }
+        .copy-btn {
+            background: #38b2ac;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 XML API на GitHub Pages</h1>
+        <p class="subtitle">Полностью бесплатный статический XML API. Не требует сервера, хостинга и программирования!</p>
+        
+        <div class="test-box">
+            <h3>🎯 Быстрый тест API:</h3>
+            <p>Попробуйте прямо сейчас! Нажмите на ссылку ниже:</p>
+            <div class="endpoint-grid">
+                <a href="api/data.xml" class="btn" target="_blank">📊 Основные данные (data.xml)</a>
+                <a href="api/users/user1.xml" class="btn" target="_blank">👤 Пример пользователя</a>
+                <a href="api/products/1.xml" class="btn" target="_blank">🛍️ Пример товара</a>
+            </div>
+        </div>
+
+        <h2>📋 Доступные endpoints:</h2>
+        <div class="endpoint-grid">
+            <div class="endpoint-card">
+                <h3>📄 Основные данные</h3>
+                <p><code>GET /api/data.xml</code></p>
+                <p>Полный набор тестовых данных в XML формате</p>
+                <a href="api/data.xml" class="btn" target="_blank">Протестировать</a>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>⚙️ Конфигурация</h3>
+                <p><code>GET /api/config.xml</code></p>
+                <p>Настройки и конфигурация API</p>
+                <a href="api/config.xml" class="btn" target="_blank">Протестировать</a>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>👥 Пользователи</h3>
+                <p><code>GET /api/users/user1.xml</code></p>
+                <p><code>GET /api/users/user2.xml</code></p>
+                <a href="api/users/user1.xml" class="btn" target="_blank">Пример 1</a>
+                <a href="api/users/user2.xml" class="btn btn-secondary">Пример 2</a>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>🛒 Товары</h3>
+                <p><code>GET /api/products/1.xml</code></p>
+                <p><code>GET /api/products/2.xml</code></p>
+                <a href="api/products/1.xml" class="btn" target="_blank">Товар 1</a>
+                <a href="api/products/2.xml" class="btn btn-secondary">Товар 2</a>
+            </div>
+        </div>
+
+        <h2>🔧 Как использовать в вашем коде:</h2>
+        
+        <h3>JavaScript (браузер):</h3>
+        <pre id="code-js"><code>fetch('https://ВАШ_USERNAME.github.io/my-xml-api/api/data.xml')
+    .then(response => response.text())
+    .then(xmlString => {
+        // Парсинг XML
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        
+        // Использование данных
+        const items = xmlDoc.querySelectorAll('item');
+        items.forEach(item => {
+            console.log(item.textContent);
+        });
+    })
+    .catch(error => console.error('Ошибка:', error));</code></pre>
+        <button class="copy-btn" onclick="copyCode('code-js')">Копировать</button>
+
+        <h3>Python:</h3>
+        <pre id="code-python"><code>import requests
+import xml.etree.ElementTree as ET
+
+# Получаем XML
+url = 'https://ВАШ_USERNAME.github.io/my-xml-api/api/data.xml'
+response = requests.get(url)
+
+# Парсим XML
+root = ET.fromstring(response.text)
+
+# Извлекаем данные
+for item in root.findall('.//item'):
+    print(f"ID: {item.get('id')}")
+    print(f"Название: {item.find('name').text}")
+    print(f"Цена: {item.find('price').text}")
+    print("---")</code></pre>
+        <button class="copy-btn" onclick="copyCode('code-python')">Копировать</button>
+
+        <h3>PHP:</h3>
+        <pre id="code-php"><code>&lt;?php
+// Получаем XML
+$xml_string = file_get_contents('https://ВАШ_USERNAME.github.io/my-xml-api/api/data.xml');
+
+// Парсим XML
+$xml = simplexml_load_string($xml_string);
+
+// Используем данные
+foreach ($xml->data->items->item as $item) {
+    echo "ID: " . $item['id'] . "&lt;br&gt;";
+    echo "Название: " . $item->name . "&lt;br&gt;";
+    echo "Цена: $" . $item->price . "&lt;br&gt;&lt;br&gt;";
+}
+?&gt;</code></pre>
+        <button class="copy-btn" onclick="copyCode('code-php')">Копировать</button>
+
+        <h2>📁 Структура файлов:</h2>
+        <pre>
+my-xml-api/
+├── index.html          ← Эта страница
+├── api/
+│   ├── data.xml       ← Основные данные
+│   ├── config.xml     ← Конфигурация
+│   ├── users/
+│   │   ├── user1.xml  ← Пользователь 1
+│   │   └── user2.xml  ← Пользователь 2
+│   └── products/
+│       ├── 1.xml      ← Товар 1
+│       └── 2.xml      ← Товар 2
+└── README.md          ← Описание репозитория
+        </pre>
+
+        <h2>⚡ Быстрое редактирование:</h2>
+        <p>Чтобы изменить данные, просто отредактируйте XML файлы в папке <code>api/</code></p>
+        
+        <div class="card">
+            <h3>🆓 Преимущества этого подхода:</h3>
+            <ul>
+                <li>✅ Полностью бесплатно</li>
+                <li>✅ Не требует программирования</li>
+                <li>✅ Работает моментально</li>
+                <li>✅ Высокая доступность (99.9% uptime)</li>
+                <li>✅ Можно использовать прямо сейчас</li>
+                <li>✅ Поддерживает CORS (можно вызывать из браузера)</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Создано с ❤️ на GitHub Pages • <a href="https://github.com/ВАШ_USERNAME/my-xml-api" target="_blank">Исходный код на GitHub</a></p>
+            <p>Ваш URL: <code id="site-url">https://ВАШ_USERNAME.github.io/my-xml-api/</code></p>
+            <button class="btn btn-secondary" onclick="copyText('site-url')">Копировать URL</button>
+        </footer>
+    </div>
+
+    <script>
+        // Автоматическая подстановка имени пользователя
+        const currentUrl = window.location.href;
+        const githubMatch = currentUrl.match(/github\.io\/([^\/]+)/);
+        if (githubMatch) {
+            const username = githubMatch[1];
+            document.getElementById('site-url').textContent = 
+                `https://${username}.github.io/my-xml-api/`;
+            
+            // Обновляем ссылки в примерах кода
+            document.querySelectorAll('pre code').forEach(code => {
+                code.textContent = code.textContent.replace(
+                    'ВАШ_USERNAME', 
+                    username
+                );
+            });
+        }
+
+        function copyCode(elementId) {
+            const codeElement = document.getElementById(elementId);
+            const codeText = codeElement.querySelector('code').textContent;
+            copyToClipboard(codeText);
+            alert('Код скопирован в буфер обмена!');
+        }
+
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            copyToClipboard(text);
+            alert('URL скопирован в буфер обмена!');
+        }
+
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+</html>
