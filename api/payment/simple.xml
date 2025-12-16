@@ -15,8 +15,10 @@
     </account-amount>
   </purchase>
   <transaction-type>AFT</transaction-type>
-  <mir-extension>
+<mir-extension>
     <type>3ds2.destAbroadSWIFT</type>
-    <value>BLRALFABY2X37544781070</value>
+    <value>NBFAUZ2X</value>
+    <country>UZB</country>
+    <phone>998946012299</phone>
   </mir-extension>
 </payment-avail-response>
