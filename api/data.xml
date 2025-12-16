@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api_response>
+    <status>success</status>
+    <timestamp>2024-01-15T12:00:00Z</timestamp>
+    <description>Пример XML API на GitHub Pages</description>
+    
+    <metadata>
+        <version>1.0.0</version>
+        <generator>GitHub Pages Static XML</generator>
+        <format>application/xml</format>
+        <encoding>UTF-8</encoding>
+    </metadata>
+    
+    <user>
+        <id>12345</id>
+        <username>john_doe</username>
+        <email>john@example.com</email>
+        <profile>
+            <full_name>John Doe</full_name>
+            <age>30</age>
+            <country>USA</country>
+            <city>New York</city>
+        </profile>
+        <subscription>
+            <type>premium</type>
+            <expires>2024-12-31</expires>
+            <active>true</active>
+        </subscription>
+    </user>
+    
+    <products>
+        <product id="1">
+            <name>iPhone 15 Pro</name>
+            <category>Electronics</category>
+            <price>999.99</price>
+            <currency>USD</currency>
+            <stock_quantity>50</stock_quantity>
+            <specifications>
+                <screen>6.1" Super Retina XDR</screen>
+                <processor>A17 Pro</processor>
+                <memory>256GB</memory>
+                <camera>48MP</camera>
+            </specifications>
+            <tags>
+                <tag>apple</tag>
+                <tag>smartphone</tag>
+                <tag>premium</tag>
+            </tags>
+        </product>
+        
+        <product id="2">
+            <name>Samsung Galaxy S23</name>
+            <category>Electronics</category>
+            <price>799.99</price>
+            <currency>USD</currency>
+            <stock_quantity>75</stock_quantity>
+            <specifications>
+                <screen>6.1" Dynamic AMOLED 2X</screen>
+                <processor>Snapdragon 8 Gen 2</processor>
+                <memory>256GB</memory>
+                <camera>50MP</camera>
+            </specifications>
+            <tags>
+                <tag>samsung</tag>
+                <tag>android</tag>
+                <tag>smartphone</tag>
+            </tags>
+        </product>
+        
+        <product id="3">
+            <name>MacBook Air M2</name>
+            <category>Laptops</category>
+            <price>1199.99</price>
+            <currency>USD</currency>
+            <stock_quantity>25</stock_quantity>
+            <specifications>
+                <screen>13.6" Liquid Retina</screen>
+                <processor>Apple M2</processor>
+                <memory>8GB</memory>
+                <storage>256GB SSD</storage>
+                <battery>18 hours</battery>
+            </specifications>
+            <tags>
+                <tag>apple</tag>
+                <tag>laptop</tag>
+                <tag>ultrabook</tag>
+            </tags>
+        </product>
+    </products>
+    
+    <statistics>
+        <total_products>3</total_products>
+        <total_value>2999.97</total_value>
+        <average_price>999.99</average_price>
+        <in_stock_total>150</in_stock_total>
+        <categories>
+            <category name="Electronics" count="2"/>
+            <category name="Laptops" count="1"/>
+        </categories>
+    </statistics>
+    
+    <links>
+        <link rel="self" href="/api/data.xml"/>
+        <link rel="config" href="/api/config.xml"/>
+        <link rel="users" href="/api/users/"/>
+        <link rel="products" href="/api/products/"/>
+        <link rel="documentation" href="/"/>
+    </links>
+</api_response>
