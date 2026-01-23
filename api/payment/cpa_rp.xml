@@ -14,4 +14,9 @@
       <exponent>2</exponent>
     </account-amount>
   </purchase>
+  <transaction-type>Payment</transaction-type>
+<card>
+   <id>03BZW3PSV1SH</id>
+   <present>Y</present>
+</card>
 </payment-avail-response>
