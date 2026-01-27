@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<payment-avail-response>
+<payment-avail-response>    
   <result>
     <code>1</code>
     <desc>OK</desc>
   </result>
-  <transaction-type>CardRegister</transaction-type>
   <purchase>
-    <shortDesc>Test payment transaction</shortDesc>
-    <longDesc>This is a test payment for demonstration purposes</longDesc>
+    <shortDesc>Order description</shortDesc>
+    <longDesc>Long order description</longDesc>
     <account-amount>
-      <amount>10010</amount>
+      <amount>1008</amount>
       <fee>0</fee>
       <currency>643</currency>
       <exponent>2</exponent>
     </account-amount>
   </purchase>
+  <transaction-type>CardRegister</transaction-type>
 </payment-avail-response>
