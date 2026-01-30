@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment-avail-response>
+  <result>
+    <code>1</code>
+    <desc>OK</desc>
+  </result>
+  <purchase>
+    <shortDesc>Order description</shortDesc>
+    <longDesc>Long order description</longDesc>
+    <account-amount>
+      <amount>19900</amount>
+      <currency>643</currency>
+      <exponent>2</exponent>
+    </account-amount>
+  </purchase>
+<submerchant-data>
+  <id>46992_941616</id>
+  <city>Yekaterinburg</city>
+  <country>RUS</country>
+  <name>desposito</name>
+  <terminal-id>999666</terminal-id>
+  <mcc>4900</mcc>
+  <inn>6658376074</inn>
+</submerchant-data>
+</payment-avail-response>
