@@ -8,8 +8,7 @@
     <shortDesc>Order description</shortDesc>
     <longDesc>Long order description</longDesc>
     <account-amount>
-      <amount>1001</amount>
-      <fee>0</fee>
+      <amount>100</amount>
       <currency>643</currency>
       <exponent>2</exponent>
     </account-amount>
