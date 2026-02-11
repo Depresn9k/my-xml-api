@@ -13,5 +13,4 @@
       <exponent>2</exponent>
     </account-amount>
   </purchase>
-  <transaction-type>AFT</transaction-type>
 </payment-avail-response>
