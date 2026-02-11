@@ -4,10 +4,11 @@
     <code>1</code>
     <desc>OK</desc>
   </result>
+  <merchant-trx>649</merchant-trx>
   <purchase>
-    <shortDesc>Order description</shortDesc>
-    <longDesc>Long order description</longDesc>
+    <longDesc>Оплата услуги</longDesc>
     <account-amount>
+      <id>8BF2336CBC24D53E5C6E</id>
       <amount>100</amount>
       <currency>643</currency>
       <exponent>2</exponent>
